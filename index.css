@@ -1,0 +1,86 @@
+@import url(./reset.css);
+
+:root{
+    --Softred: hsl(10, 79%, 65%);
+    --Softred1: hsl(10, 71%, 75%);
+    --Cyan: hsl(186, 34%, 60%);
+    --Cyan1:rgb(161, 195, 199);
+
+    --Darkbrown: hsl(25, 47%, 15%);
+    --Mediumbrown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Verypaleorange: hsl(33, 100%, 98%);
+}
+html,body{
+    font-family: 'DM Sans';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: var(--Cream);
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: var(--Softred);
+    border-radius: 15px;
+    margin: 0 0 1.5rem;
+    p{
+        color: var(--Cream);
+    }
+    h1{
+        color: var(--Verypaleorange);
+        line-height: 2.5rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+}
+main{
+    background-color: var(--Verypaleorange);
+    border-radius: 15px;
+    padding: 1.5rem;
+    max-width: 35rem;
+}
+canvas{
+    border-bottom: 1px solid var(--Cream);
+    margin: 2rem 0 2rem;
+    padding: 0 0 2rem;
+}
+.bottom{
+    p{
+        color: var(--Mediumbrown);
+    }
+}
+.lower{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+        font-size: 2.5rem;
+    }
+}
+.fromlast{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    p{
+        color: var(--Mediumbrown);
+    }
+}
+footer{
+    position: absolute;
+    top: 97%;
+}
+@media screen and (max-width: 575px){
+    html,body{
+        width: 100%;
+        padding: 0.5rem;
+    }
+    main{
+        width: 100%;
+    }
+}
